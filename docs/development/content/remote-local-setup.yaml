@@ -53,10 +53,10 @@ spec:
             set -g pane-border-status top
             set -g pane-border-format " #{pane_index} #{pane_title} - #{pane_current_command} "
           EOF
-          git clone -q https://github.com/gardener/gardener.git
+          git clone -q https://github.com/himanshu-kun/gardener.git
           cd gardener
           mkdir -p ~/go/src/github.com/gardener
-          ln -s ~/gardener ~/go/src/github.com/gardener/gardener
+          ln -s ~/gardener ~/go/src/github.com/himanshu-kun/gardener
           ln -s ~/gardener/hack/tools/bin/protoc-gen-gogo ~/gardener/protoc-gen-gogo
           # TODO 'host.docker.internal' can not be resolved on docker for Linux (https://github.com/docker/for-linux/issues/264, https://stackoverflow.com/questions/48546124/what-is-linux-equivalent-of-host-docker-internal)
           #      maybe there is a better way than using the IP address of the docker0 device: 172.17.0.1
